@@ -15,6 +15,6 @@ def load_data():
 def save_data(data):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, "w") as f:
-        json.dumps(data, f, indent=2)
+        json.dump(data, f, indent=2)
 
 
